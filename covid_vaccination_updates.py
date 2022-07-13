@@ -1,4 +1,4 @@
-import requests
+ import requests
  from datetime import datetime, timedelta
  import time
  import pytz
@@ -52,7 +52,7 @@ import requests
      tel_resp = requests.get(telegram_api_url)
  if tel_resp.status_code == 200:
      print ("Notification has been sent on Telegram") 
-else:
+ else:
      print ("Could not send Message")
  if name == "main":    
      while True:
